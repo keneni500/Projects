@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+Vendors Page 
+{% endblock%}
+
+{% block content %}
+<h2>List of vendors</h2>
+<hr size="5">
+<ul>
+  {% for vendor in vendors %} 
+      
+    <li> 
+      {{ vendor.name }}, {{ vendor.email }}, {{ vendor.website }}
+    </li>   
+      
+  {% endfor %}
+  
+</ul>
+
+{% endblock %}
